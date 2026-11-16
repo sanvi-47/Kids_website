@@ -1,0 +1,159 @@
+[
+  {
+    "id": "sample_game_1",
+    "title": "Space Star Catcher",
+    "type": "game",
+    "authorId": "user_demo_kid",
+    "authorName": "SparkyCoder",
+    "description": "Catch the twinkling stars falling from galaxy space before time runs out!",
+    "isPublic": true,
+    "thumbnail": "🚀",
+    "data": {
+      "blocks": [
+        {
+          "type": "event_start",
+          "id": "b1"
+        },
+        {
+          "type": "motion_move_steps",
+          "id": "b2",
+          "value": 10
+        },
+        {
+          "type": "control_forever",
+          "id": "b3",
+          "children": [
+            {
+              "type": "motion_bounce_edge",
+              "id": "b4"
+            },
+            {
+              "type": "sensing_touching",
+              "id": "b5",
+              "target": "star"
+            }
+          ]
+        }
+      ],
+      "sprites": [
+        {
+          "id": "s1",
+          "name": "Rocket",
+          "emoji": "🚀",
+          "x": 200,
+          "y": 300,
+          "size": 50,
+          "speed": 6
+        },
+        {
+          "id": "s2",
+          "name": "Star",
+          "emoji": "⭐",
+          "x": 200,
+          "y": 50,
+          "size": 40,
+          "speed": 4
+        }
+      ],
+      "background": "galaxy",
+      "score": 0
+    }
+  },
+  {
+    "id": "sample_game_2",
+    "title": "Super Maze Runner",
+    "type": "game",
+    "authorId": "user_demo_kid",
+    "authorName": "SparkyCoder",
+    "description": "Use arrow keys to escape the colourful maze and reach the treasure chest!",
+    "isPublic": true,
+    "thumbnail": "🧀",
+    "data": {
+      "sprites": [
+        {
+          "id": "s1",
+          "name": "Mouse",
+          "emoji": "🐭",
+          "x": 50,
+          "y": 50,
+          "size": 45,
+          "speed": 5
+        },
+        {
+          "id": "s2",
+          "name": "Cheese",
+          "emoji": "🧀",
+          "x": 420,
+          "y": 320,
+          "size": 45,
+          "speed": 0
+        }
+      ],
+      "background": "grid",
+      "score": 0
+    }
+  },
+  {
+    "id": "sample_anim_1",
+    "title": "Dancing Dino Birthday Party",
+    "type": "animation",
+    "authorId": "user_demo_kid",
+    "authorName": "SparkyCoder",
+    "description": "A happy dinosaur dances under confetti and sings birthday beats!",
+    "isPublic": true,
+    "thumbnail": "🦖",
+    "data": {
+      "sprites": [
+        {
+          "id": "s1",
+          "name": "Dino",
+          "emoji": "🦖",
+          "x": 220,
+          "y": 220,
+          "size": 60,
+          "dialogue": "Let's party and code!"
+        },
+        {
+          "id": "s2",
+          "name": "Cake",
+          "emoji": "🎂",
+          "x": 330,
+          "y": 240,
+          "size": 50
+        }
+      ],
+      "background": "party",
+      "frames": []
+    }
+  },
+  {
+    "id": "sample_story_1",
+    "title": "The Brave Robot and Magic Tree",
+    "type": "story",
+    "authorId": "user_demo_kid",
+    "authorName": "SparkyCoder",
+    "description": "An interactive tale of Robbie the Robot learning to make friendly code.",
+    "isPublic": true,
+    "thumbnail": "🤖",
+    "data": {
+      "scenes": [
+        {
+          "id": "scene_1",
+          "name": "The Forest Entry",
+          "background": "forest",
+          "character": "🤖",
+          "dialogue": "Hello world! I am looking for the Tree of Wisdom.",
+          "action": "walk_right"
+        },
+        {
+          "id": "scene_2",
+          "name": "At The Magic Tree",
+          "background": "fantasy_forest",
+          "character": "🌳",
+          "dialogue": "Welcome Robbie! To pass, teach me a simple code loop!",
+          "action": "glow"
+        }
+      ]
+    }
+  }
+]

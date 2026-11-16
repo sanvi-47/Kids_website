@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Nunito', system-ui, -apple-system, sans-serif;
+    background-color: #18113C;
+    color: #F8FAFC;
+    overflow-x: hidden;
+  }
+}
+
+/* 3D TACTILE BUTTONS WITH EXTRUSION AND CLICK DEPTH */
+.btn-3d-pink {
+  background: linear-gradient(180deg, #FF6FB5 0%, #FF4FA3 50%, #D81476 100%) !important;
+  box-shadow: 0 6px 0 0 #A00854, 0 14px 22px rgba(255, 79, 163, 0.5) !important;
+  border: 2px solid #FFAEDB !important;
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-3d-pink:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 0 0 #A00854, 0 18px 26px rgba(255, 79, 163, 0.6) !important;
+}
+.btn-3d-pink:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 0 #A00854, 0 6px 12px rgba(255, 79, 163, 0.4) !important;
+}
+
+.btn-3d-purple {
+  background: linear-gradient(180deg, #9D5BFF 0%, #7C3AED 50%, #5118B8 100%) !important;
+  box-shadow: 0 6px 0 0 #340982, 0 14px 22px rgba(124, 58, 237, 0.5) !important;
+  border: 2px solid #C4A7FF !important;
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-3d-purple:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 0 0 #340982, 0 18px 26px rgba(124, 58, 237, 0.6) !important;
+}
+.btn-3d-purple:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 0 #340982, 0 6px 12px rgba(124, 58, 237, 0.4) !important;
+}
+
+.btn-3d-cyan {
+  background: linear-gradient(180deg, #5EE6F7 0%, #20C5D9 50%, #0891B2 100%) !important;
+  box-shadow: 0 6px 0 0 #0E7490, 0 14px 22px rgba(32, 197, 217, 0.5) !important;
+  border: 2px solid #A5F3FC !important;
+  color: #082F49 !important;
+  font-weight: 900 !important;
+  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-3d-cyan:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 0 0 #0E7490, 0 18px 26px rgba(32, 197, 217, 0.6) !important;
+}
+.btn-3d-cyan:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 0 #0E7490, 0 6px 12px rgba(32, 197, 217, 0.4) !important;
+}
+
+.btn-3d-amber {
+  background: linear-gradient(180deg, #FFE466 0%, #FFD43B 50%, #D97706 100%) !important;
+  box-shadow: 0 6px 0 0 #92400E, 0 14px 22px rgba(255, 212, 59, 0.5) !important;
+  border: 2px solid #FEF08A !important;
+  color: #451A03 !important;
+  font-weight: 900 !important;
+  transition: all 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.btn-3d-amber:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 0 0 #92400E, 0 18px 26px rgba(255, 212, 59, 0.6) !important;
+}
+.btn-3d-amber:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 0 #92400E, 0 6px 12px rgba(255, 212, 59, 0.4) !important;
+}
+
+/* 3D FLOATING TILT CARDS ON DARK INDIGO BACKING */
+.card-3d {
+  background: linear-gradient(135deg, rgba(36, 16, 79, 0.95) 0%, rgba(24, 17, 60, 0.95) 100%);
+  backdrop-filter: blur(16px);
+  border: 2px solid rgba(124, 58, 237, 0.45);
+  box-shadow: 0 18px 36px -5px rgba(0, 0, 0, 0.6), 0 0 24px rgba(124, 58, 237, 0.25);
+  transform-style: preserve-3d;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.card-3d:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 50px -10px rgba(0, 0, 0, 0.75), 0 0 35px rgba(255, 79, 163, 0.4);
+  border-color: rgba(255, 79, 163, 0.7);
+}
+
+/* SECTION BACKGROUND GRADIENTS (NO PLAIN WHITE) */
+.space-universe-bg {
+  background-color: #18113C;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(81, 38, 168, 0.5) 0%, transparent 45%),
+    radial-gradient(circle at 85% 20%, rgba(255, 79, 163, 0.35) 0%, transparent 45%),
+    radial-gradient(circle at 50% 65%, rgba(23, 71, 184, 0.35) 0%, transparent 50%),
+    radial-gradient(circle at 20% 85%, rgba(32, 197, 217, 0.25) 0%, transparent 45%),
+    linear-gradient(180deg, #18113C 0%, #24104F 50%, #150E34 100%);
+  min-height: 100vh;
+}
+
+.cosmic-stars {
+  background-image: 
+    radial-gradient(2px 2px at 25px 35px, #FFFFFF, rgba(0,0,0,0)),
+    radial-gradient(2.5px 2.5px at 65px 85px, #FFD43B, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 120px 45px, #20C5D9, rgba(0,0,0,0)),
+    radial-gradient(2px 2px at 170px 140px, #FF4FA3, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 220px 220px;
+}
+
+/* Scratch block notches with premium 3D depth */
+.scratch-block {
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+.scratch-block:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.3);
+}

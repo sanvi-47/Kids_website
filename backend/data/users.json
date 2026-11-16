@@ -1,0 +1,36 @@
+[
+  {
+    "id": "user_demo_kid",
+    "username": "SparkyCoder",
+    "email": "kid@sparkcode.ai",
+    "passwordHash": "$2a$10$w09u7RrvqZ23W1bQfWk3fOGx5zNkVW3q1H784q8wW73QzK2kE1i2y",
+    "role": "kid",
+    "age": 10,
+    "avatar": "🦊",
+    "parentEmail": "parent@sparkcode.ai",
+    "screenTimeLimitMinutes": 60,
+    "allowedAIModes": [
+      "guided",
+      "creative",
+      "strict"
+    ],
+    "xp": 350,
+    "level": 3,
+    "badges": [
+      "First Code",
+      "Maze Runner",
+      "Storyteller"
+    ]
+  },
+  {
+    "id": "user_demo_parent",
+    "username": "ParentSarah",
+    "email": "parent@sparkcode.ai",
+    "passwordHash": "$2a$10$w09u7RrvqZ23W1bQfWk3fOGx5zNkVW3q1H784q8wW73QzK2kE1i2y",
+    "role": "parent",
+    "avatar": "🦉",
+    "childrenIds": [
+      "user_demo_kid"
+    ]
+  }
+]
