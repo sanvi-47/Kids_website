@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 SparkCode AI - Kids Ethical AI & Creative Coding Platform
 
 An interactive, kid-friendly, Scratch-inspired visual programming and creative studio platform. Built for children aged 6–16 to create games, animate cartoons, author interactive branching stories, program visual logic blocks, and explore ethical AI with safe guidance.
@@ -107,3 +108,6 @@ GEMINI_API_KEY=YOUR_GEMINI_API_KEY_HERE
 ```
 *Note: If `GEMINI_API_KEY` is left blank, the platform automatically runs in safe simulated AI demo mode.*
 
+=======
+# Kids_website
+>>>>>>> 664b67aa585e26b75423c518cbd77fc1b20bca5e
